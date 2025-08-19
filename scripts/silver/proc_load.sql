@@ -1,9 +1,10 @@
 /*
 ===========================================================================================================
 
-This stored procedure loads data into the ''bronze schema from external CSV files
+This stored procedure does the ETL (Extract, Load, Transform) process
+to populate the 'silver' schema tables from the 'bronze schema tables.
 
-It performs the following functions:
+It:
 -Truncates the silver tables before loading the data
 -Uses the INSERT command to load the transformed data to the Silver Tables
 
